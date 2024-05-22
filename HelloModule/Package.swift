@@ -1,4 +1,4 @@
-// swift-tools-version:5.2
+// swift-tools-version:5.3
 import PackageDescription
 
 let package = Package(
@@ -7,11 +7,20 @@ let package = Package(
         .library(
             name: "HelloModule",
             type: .dynamic,
-            targets: ["HelloModule"]),
+            targets: ["HelloModule"]
+        ),
     ],
     targets: [
         .target(
             name: "HelloModule",
-            dependencies: []),
+            path: "Sources/HelloModule",
+            swiftSettings: [
+                .unsafeFlags(["-enable-library-evolution", "-emit-module-interface-path", "HelloModule.swiftinterface"])
+            ],
+            linkerSettings: [
+                .unsafeFlags(["-emit-module-interface-path", "HelloModule.swiftinterface"])
+            ]
+
+        )
     ]
 )

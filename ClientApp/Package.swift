@@ -9,14 +9,14 @@ let package = Package(
             dependencies: [],
             path: "Sources/ClientApp",
             exclude: [
-                "HelloModule.swiftinterface",
-                "HelloModule.private.swiftinterface"
+                "../../deps/HelloModule/HelloModule.swiftinterface",
+                "../../deps/HelloModule/HelloModule.private.swiftinterface"
             ],
             swiftSettings: [
-                .unsafeFlags(["-I.", "-enable-library-evolution"], .when(configuration: .debug))
+                .unsafeFlags(["-Ideps/HelloModule", "-enable-library-evolution"], .when(configuration: .debug))
             ],
             linkerSettings: [
-                .unsafeFlags(["-L.", "-lHelloModule"], .when(configuration: .debug))
+                .unsafeFlags(["-Ldeps/HelloModule", "-lHelloModule"], .when(configuration: .debug))
             ]
         )
     ]
