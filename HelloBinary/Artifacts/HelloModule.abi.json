@@ -1,0 +1,99 @@
+{
+  "ABIRoot": {
+    "kind": "Root",
+    "name": "HelloModule",
+    "printedName": "HelloModule",
+    "children": [
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "HelloModule",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "HelloProvider",
+        "printedName": "HelloProvider",
+        "children": [
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "HelloProvider",
+                "printedName": "HelloModule.HelloProvider",
+                "usr": "s:11HelloModule0A8ProviderC"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:11HelloModule0A8ProviderCACycfc",
+            "mangledName": "$s11HelloModule0A8ProviderCACycfc",
+            "moduleName": "HelloModule",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "greet",
+            "printedName": "greet(name:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:11HelloModule0A8ProviderC5greet4nameS2S_tF",
+            "mangledName": "$s11HelloModule0A8ProviderC5greet4nameS2S_tF",
+            "moduleName": "HelloModule",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:11HelloModule0A8ProviderC",
+        "mangledName": "$s11HelloModule0A8ProviderC",
+        "moduleName": "HelloModule",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
+      }
+    ],
+    "json_format_version": 8
+  },
+  "ConstValues": []
+}
