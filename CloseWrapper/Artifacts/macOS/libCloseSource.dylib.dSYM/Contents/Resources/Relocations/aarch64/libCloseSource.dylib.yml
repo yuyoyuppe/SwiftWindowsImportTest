@@ -1,0 +1,23 @@
+---
+triple:          'arm64-apple-darwin'
+binary-path:     '/Users/marcos/Downloads/Experiments/CloseSource/.build/arm64-apple-macosx/release/libCloseSource.dylib'
+relocations:
+  - { offset: 0x87C8B, size: 0x8, addend: 0x0, symName: '_$s11CloseSource02doA5StuffyyF', symObjAddr: 0xB8, symBinAddr: 0x384C, symSize: 0x80 }
+  - { offset: 0x87CDE, size: 0x8, addend: 0x0, symName: ___swift_instantiateConcreteTypeFromMangledName, symObjAddr: 0x138, symBinAddr: 0x38CC, symSize: 0x40 }
+  - { offset: 0x87CF2, size: 0x8, addend: 0x0, symName: '_$s11CloseSource0A5ClassCMa', symObjAddr: 0x178, symBinAddr: 0x390C, symSize: 0x20 }
+  - { offset: 0x87D06, size: 0x8, addend: 0x0, symName: '_$s11CloseSource0A6StructVwCP', symObjAddr: 0x1AC, symBinAddr: 0x3940, symSize: 0x2C }
+  - { offset: 0x87D1A, size: 0x8, addend: 0x0, symName: '_$s11CloseSource0A6StructVwxx', symObjAddr: 0x1D8, symBinAddr: 0x396C, symSize: 0x8 }
+  - { offset: 0x87D2E, size: 0x8, addend: 0x0, symName: '_$s11CloseSource0A6StructVwca', symObjAddr: 0x1E0, symBinAddr: 0x3974, symSize: 0x40 }
+  - { offset: 0x87D42, size: 0x8, addend: 0x0, symName: ___swift_memcpy16_8, symObjAddr: 0x220, symBinAddr: 0x39B4, symSize: 0xC }
+  - { offset: 0x87D56, size: 0x8, addend: 0x0, symName: '_$s11CloseSource0A6StructVwta', symObjAddr: 0x22C, symBinAddr: 0x39C0, symSize: 0x30 }
+  - { offset: 0x87D6A, size: 0x8, addend: 0x0, symName: '_$s11CloseSource0A6StructVwet', symObjAddr: 0x25C, symBinAddr: 0x39F0, symSize: 0x48 }
+  - { offset: 0x87D7E, size: 0x8, addend: 0x0, symName: '_$s11CloseSource0A6StructVwst', symObjAddr: 0x2A4, symBinAddr: 0x3A38, symSize: 0x3C }
+  - { offset: 0x87D92, size: 0x8, addend: 0x0, symName: '_$s11CloseSource0A6StructVMa', symObjAddr: 0x2E0, symBinAddr: 0x3A74, symSize: 0x10 }
+  - { offset: 0x87DAD, size: 0x8, addend: 0x0, symName: '_$s11CloseSource0A5ClassCACycfC', symObjAddr: 0x0, symBinAddr: 0x3794, symSize: 0x10 }
+  - { offset: 0x87DC1, size: 0x8, addend: 0x0, symName: '_$s11CloseSource0A5ClassCACycfc', symObjAddr: 0x10, symBinAddr: 0x37A4, symSize: 0x8 }
+  - { offset: 0x87E60, size: 0x8, addend: 0x0, symName: '_$s11CloseSource0A5ClassC5greet4nameS2S_tF', symObjAddr: 0x18, symBinAddr: 0x37AC, symSize: 0x54 }
+  - { offset: 0x87F07, size: 0x8, addend: 0x0, symName: '_$s11CloseSource0A5ClassCfd', symObjAddr: 0x6C, symBinAddr: 0x3800, symSize: 0x8 }
+  - { offset: 0x87F2C, size: 0x8, addend: 0x0, symName: '_$s11CloseSource0A5ClassCfD', symObjAddr: 0x74, symBinAddr: 0x3808, symSize: 0x10 }
+  - { offset: 0x87F51, size: 0x8, addend: 0x0, symName: '_$s11CloseSource0A6StructV4nameSSvg', symObjAddr: 0x84, symBinAddr: 0x3818, symSize: 0x2C }
+  - { offset: 0x87F6B, size: 0x8, addend: 0x0, symName: '_$s11CloseSource0A6StructV4nameACSS_tcfC', symObjAddr: 0xB0, symBinAddr: 0x3844, symSize: 0x8 }
+...
