@@ -1,0 +1,4 @@
+module CMath {
+  header "system_library.h"
+  export *
+}
