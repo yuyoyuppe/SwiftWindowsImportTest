@@ -1,0 +1,18 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Swift version 6.0.2 (swift-6.0.2-RELEASE)
+// swift-module-flags: -target x86_64-unknown-windows-msvc -disable-objc-interop -enable-library-evolution -swift-version 6 -O -module-name CloseSource -package-name closesource
+import Foundation
+import Swift
+import _Concurrency
+import _StringProcessing
+import _SwiftConcurrencyShims
+final public class CloseClass {
+  public init()
+  final public func greet(name: Swift.String) -> Swift.String
+  deinit
+}
+public struct CloseStruct {
+  public let name: Swift.String
+  public init(name: Swift.String)
+}
+public func doCloseStuff()

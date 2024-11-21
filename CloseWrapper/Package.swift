@@ -14,10 +14,10 @@ let package = Package(
     .target(
       name: "CloseWrapper",
       swiftSettings: [
-        .unsafeFlags(["-enable-library-evolution", "-IArtifacts/macOS"], .when(platforms: [.macOS])),
+        .unsafeFlags(["-enable-library-evolution", "-IArtifacts/Windows"], .when(platforms: [.windows]))
       ],
       linkerSettings: [
-        .unsafeFlags(["-LArtifacts/macOS", "-lCloseSource"], .when(platforms: [.macOS]))
+        .unsafeFlags(["-LArtifacts/Windows", "-lCloseSource"], .when(platforms: [.windows]))
       ]
     ),
   ],
