@@ -7,25 +7,18 @@ let package = Package(
         .executable(name: "clientapp", targets: ["ClientApp"])
     ],
     dependencies: [
-        .package(path: "../HelloModule")
+        .package(path: "../HelloBinary")
     ],
     targets: [
-        .target(
+        .executableTarget(
             name: "ClientApp",
             dependencies: [
-                .product(name: "HelloModule", package: "HelloModule")
+                .product(name: "HelloBinary", package: "HelloBinary")
             ],
-            path: "Sources/ClientApp"
-            // exclude: [
-            //     "../../deps/HelloModule/HelloModule.swiftinterface",
-            //     "../../deps/HelloModule/HelloModule.private.swiftinterface"
-            // ],
-            // swiftSettings: [
-            //     .unsafeFlags(["-Ideps/HelloModule", "-enable-library-evolution"])
-            // ],
-            // linkerSettings: [
-            //     .unsafeFlags(["-Ldeps/HelloModule", "-lHelloModule"])
-            // ]
+            path: "Sources/ClientApp",
+            swiftSettings: [
+                .unsafeFlags(["-enable-library-evolution"])
+            ]
         )
     ],
     swiftLanguageModes: [
